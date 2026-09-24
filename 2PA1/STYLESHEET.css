@@ -1,0 +1,72 @@
+/* COMBINADOR DESCENDIENTE*/
+div p{
+    background-color: greenyellow;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+div > p {
+    background-color: pink;
+    padding: 2px;
+    border: 1px solid plum;
+}
+
+/* COMBINADOR SIGUIENTE HERMANO */
+div + p{
+    background-color: aquamarine;
+    color: rgb(37, 11, 60);
+    font-size: 24px;
+}
+
+div ~ p {
+    background-color:bisque;
+    color: black;
+}
+
+.link:hover {
+    color:darkgreen;
+}
+
+.link:link {
+    color: darkorange;
+}
+
+.link:focus {
+    font-weight: bold;
+}
+
+.link:active {
+    color:darkgrey
+}
+
+.link:visited {
+    color: darkmagenta;
+}
+
+#lorem::first-line {
+    font-weight: bold;
+    background-color: lavender;
+    color:darkgray;
+}
+
+#lorem::first-letter {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+div::before {
+    content: "🐵";
+}
+
+div::after {
+    content: "🐣";
+}
+
+::marker {
+    color: darkgray;
+}
+
+::selection {
+    background-color: lemonchiffon;
+    color: darkgrey;
+}
