@@ -1,0 +1,192 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #f4f6f0;
+    color: #1f3524;
+}
+
+
+#nav{
+    background-color: #244d2c;
+    padding: 20px 40px;
+}
+
+#nav a{
+    color: white;
+    text-decoration: none;
+    margin-right: 25px;
+    font-weight: bold;
+}
+
+#nav a:hover{
+    color: #dfff4f;
+}
+
+
+section{
+    margin: 40px;
+}
+
+section h1{
+    font-size: 26px;
+    margin-bottom: 8px;
+    color: #244d2c;
+}
+
+.subtitulo{
+    color: #667067;
+    font-size: 15px;
+}
+
+hr{
+    border: none;
+    height: 2px;
+    background-color: #b8cc75;
+    margin-bottom: 25px;
+}
+
+
+#contenedor{
+    width: 600px;
+    height: 700px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/3e/Tennis_Court.JPG");
+    background-size: cover;
+    background-position: center;
+}
+
+#contenedor::before{
+    content: "";
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+
+    background-color: rgba(25, 70, 35, 0.25);
+}
+
+
+#contenedor h2{
+    position: absolute;
+
+    top: 25px;
+    left: 0;
+
+    width: 100%;
+
+    text-align: center;
+
+    color: white;
+
+    font-size: 32px;
+    letter-spacing: 3px;
+
+    z-index: 10;
+}
+
+
+.frase{
+    position: absolute;
+
+    top: 75px;
+    left: 0;
+
+    width: 100%;
+
+    text-align: center;
+
+    color: #eaff62;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    z-index: 10;
+}
+
+
+.producto{
+    position: absolute;
+    z-index: 5;
+}
+
+
+.raqueta{
+    top: 120px;
+    left: 90px;
+
+    transform: rotate(-20deg);
+}
+
+.raqueta img{
+    width: 490px;
+}
+
+
+.pelota{
+    top: 220px;
+    right: 65px;
+}
+
+.pelota img{
+    width: 85px;
+}
+
+
+.pelota2{
+    top: 400px;
+    left: 90px;
+}
+
+.pelota2 img{
+    width: 100px;
+}
+
+
+.pelota3{
+    top: 470px;
+    right: 80px;
+}
+
+.pelota3 img{
+    width: 65px;
+}
+
+.mensaje{
+    position: absolute;
+
+    bottom: 25px;
+    left: 50px;
+
+    width: 500px;
+
+    text-align: center;
+
+    background-color: rgba(20, 60, 30, 0.85);
+
+    padding: 12px 0;
+
+    color: white;
+
+    z-index: 10;
+}
+
+.mensaje h3{
+    margin: 0;
+
+    color: #dfff4f;
+
+    font-size: 20px;
+}
+
+.mensaje p{
+    margin: 5px 0 0 0;
+
+    font-size: 13px;
+}
