@@ -1,0 +1,108 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f2eee9;
+    color: #242421;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #f2eee9;
+    padding: 30px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #242421;
+    font-size: 11px;
+}
+
+nav h1 {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.inicio {
+    height: 80vh;
+    min-height: 450px;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.35),
+            rgba(0, 0, 0, 0.35)
+        ),
+        url("IMAGENES/MANOS.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.contenido {
+    padding: 20px;
+}
+
+.contenido p {
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.contenido h2 {
+    font-family: Georgia, serif;
+    font-size: 55px;
+    font-weight: normal;
+    margin: 25px 0;
+}
+
+.descripcion {
+    letter-spacing: 1px !important;
+    margin-bottom: 35px;
+}
+
+.boton {
+    background-color: #f2eee9;
+    color: #242421;
+    padding: 14px 30px;
+    text-decoration: none;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.boton:hover {
+    background-color: #d6cfc5;
+}
+
+@media (max-width: 600px) {
+
+    nav {
+        flex-wrap: wrap;
+    }
+
+    nav h1 {
+        order: -1;
+        width: 100%;
+    }
+
+    .contenido h2 {
+        font-size: 36px;
+    }
+}
