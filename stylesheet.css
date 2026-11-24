@@ -177,7 +177,7 @@ h1, h2 {
 .seccion .titulo-grande { font-size: 3.4rem; }
 .oscuro { background-color: var(--carbon); color: var(--hueso); }
 .centro { text-align: center; margin-top: 24px; }
-.texto-nosotros, .testimonio, .datos { display: flex; flex-direction: column; justify-content: center; gap: 24px; }
+.texto-nosotros, .testimonio { display: flex; flex-direction: column; justify-content: center; gap: 24px; }
 
 .collage { position: relative; height: 520px; }
 .collage .marco { position: absolute; }
@@ -273,21 +273,28 @@ h1, h2 {
 .script.grande { font-size: 2.4rem; }
 blockquote { font-family: "Cormorant Garamond", Georgia, serif; font-style: italic; font-size: 1.7rem; line-height: 1.4; max-width: 36rem; }
 
-.formulario { display: flex; flex-direction: column; gap: 6px; }
-.formulario label { margin-top: 14px; font-size: 0.7rem; letter-spacing: 0.25em; text-transform: uppercase; }
-.formulario input, .formulario select, .formulario textarea {
-    padding: 10px 0;
-    border: none;
-    border-bottom: 1px solid var(--carbon);
-    background-color: transparent;
-    color: var(--carbon);
+.pie { display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 32px 24px; text-align: center; }
+
+.informacion-contacto {
+    text-align: center;
+}
+
+.informacion-contacto h2 {
+    margin: 20px 0;
+}
+
+.informacion-contacto h3 {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+.informacion-contacto p {
     font-family: "Cormorant Garamond", Georgia, serif;
     font-size: 1.25rem;
+    margin-top: 10px;
 }
-.formulario input:focus, .formulario select:focus, .formulario textarea:focus { outline: none; border-bottom: 2px solid var(--oliva); }
-.formulario .boton { align-self: flex-start; margin-top: 28px; }
-
-.pie { display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 32px 24px; text-align: center; }
 
 @media screen and (max-width: 991px) {
     .banda, .contacto { background-attachment: scroll; }
